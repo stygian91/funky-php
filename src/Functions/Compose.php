@@ -2,11 +2,10 @@
 
 namespace FunkyPhp\Functions;
 
-use FunkyPhp\Traits\Curriable;
 use FunkyPhp\Traits\Runnable;
 
 class Compose {
-    use Runnable, Curriable;
+    use Runnable;
 
     public function __invoke(...$functions) {
         $funcs = array_reverse($functions);

@@ -2,11 +2,10 @@
 
 namespace FunkyPhp\Functions;
 
-use FunkyPhp\Traits\Curriable;
 use FunkyPhp\Traits\Runnable;
 
 class Pipe {
-    use Runnable, Curriable;
+    use Runnable;
 
     public function __invoke(...$funcs) {
         if (count($funcs) === 0) {
