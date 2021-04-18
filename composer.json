@@ -1,0 +1,10 @@
+{
+    "name": "stygian91/funky-php",
+    "type": "library",
+    "autoload": {
+        "psr-4": {"FunkyPhp\\": "src/"}
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
